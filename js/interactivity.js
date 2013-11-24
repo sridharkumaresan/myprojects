@@ -128,8 +128,9 @@ $(document).ready(function() {
 	
 	// determines section of website to start with if included in url
 	start_page = window.location.pathname.replace('/', ''); 
- 	if (start_page!='') {	
-	     $('html, body').animate({ scrollTop: ($('#' + start_page).offset().top) }, 0); 
+ 	if (start_page!='') {
+ 		console.log(start_page);	
+	     //$('html, body').animate({ scrollTop: ($('#' + start_page).offset().top) }, 0); 
  	}
  	change_active(start_page, 'down'); 
  			
@@ -139,6 +140,7 @@ $(document).ready(function() {
 	
 	// on hover, focus on current project and fade out the rest
 	var show_more = function(t) {
+		console.log('1');
 		t = t || '#projects div.wrap article.active'; 
 		$('#projects article').each(function() {
 			if (!$(this).hasClass('active')) { $(this).animate({opacity: 0.15}, 500, function() {}); } 
@@ -217,6 +219,7 @@ $(document).ready(function() {
 		}
 	})
 	.on('mouseenter', '#projects article', function() {
+		console.log('1');
 		$(this).addClass('active'); 
 		if (desktop) { show_more_timeout = setTimeout(show_more, delay); } 
 	})	

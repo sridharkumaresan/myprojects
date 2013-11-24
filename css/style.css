@@ -593,7 +593,7 @@ nav#top a:nth-child(4) {
     height: 0;
 }
 .no-js #contact {
-    background: #4a819e!important;
+    background: #ADAD1A!important;
 }
 .desktop #splash header h1, .desktop #splash header h2 {
     position: absolute;
@@ -654,7 +654,7 @@ nav#top a:nth-child(4) {
     color: #777;
 }
 .desktop.ready.fade.dark #wrapper_content {
-    background-color: #5491b3;
+    background-color: #BE4B66;
 }
 .desktop.ready.fade.dark nav a {
     color: #ccc;
@@ -664,6 +664,7 @@ nav#top a:nth-child(4) {
 }
 .desktop.ready.fade.dark .quote a {
     opacity: 1;
+    color: #BE4B66;
 }
 .desktop.ready.fade #about img {
     -webkit-transition: all 500ms all;
@@ -688,7 +689,7 @@ nav#top a:nth-child(4) {
 }
 @media only screen and (min-width:1200px) {
     body {
-    background: #4a819e url('../img/bg-view-from-plane.jpg') top center no-repeat;
+    background: #13A335 url('../img/bg-view-from-plane.jpg') top center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -931,3 +932,15 @@ body.ie #projects div p {
     display: block;
     background: url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
 }
+
+.resume{
+    margin: 100px auto 0 auto;
+    font-style: normal;
+    display: block;
+    background: #fff;
+    color: #4a819e;
+    font: 28px/30px 'Lane', Helvetica, Arial, sans-serif;
+    width: 180px;
+    padding: 10px 25px;
+}
+.resume a{color: #4a819e;} 
